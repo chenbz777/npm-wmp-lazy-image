@@ -35,7 +35,7 @@ npm i @chenbz/wmp-lazy-image
 ```json
 {
     "usingComponents": {
-        "wmp-watermark": "@chenbz/wmp-lazy-image"
+        "lazy-image": "@chenbz/wmp-lazy-image"
     }
 }
 ```
@@ -46,7 +46,7 @@ npm i @chenbz/wmp-lazy-image
 
 ```html
 <view>
-  <wmp-lazy-image src="https://s1.ax1x.com/2022/05/08/OlHYdA.png"></wmp-lazy-image>
+  <lazy-image src="https://s1.ax1x.com/2022/05/08/OlHYdA.png"></lazy-image>
 </view>
 ```
 
