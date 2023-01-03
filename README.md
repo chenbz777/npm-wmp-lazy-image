@@ -58,6 +58,5 @@ npm i @chenbz/wmp-lazy-image
 | ------------ | ------ | ----------------------------------------- | ----------------- |
 | src          | String | https://s1.ax1x.com/2022/05/08/OlbiFI.gif | 图片url（必传！） |
 | lazyImageUrl | String | https://s1.ax1x.com/2022/05/08/OlbiFI.gif | "加载中"图片url   |
-| alt          | String |                                           | alt               |
 | mode         | String | widthFix                                  | 模式              |
 
