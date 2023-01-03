@@ -54,7 +54,7 @@ Component({
 
       IntersectionObserver.relativeToViewport()
 
-      IntersectionObserver.observe(className, async (res) => {
+      IntersectionObserver.observe(className, (res) => {
         if (res.intersectionRatio) {
           root.setData({
             lazyImageUrl: root.data.src
