@@ -1,4 +1,3 @@
-// components/LazyImage/index.js
 Component({
   /**
    * 组件的属性列表
@@ -30,7 +29,7 @@ Component({
 
   lifetimes: {
     // 在组件在视图层布局完成后执行
-    async ready() {
+    ready() {
       // 生成唯一 imageId
       const imageId = 'image' + Date.now()
 

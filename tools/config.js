@@ -80,7 +80,7 @@ module.exports = {
     },
     plugins: [
       new webpack.DefinePlugin({}),
-      new webpack.optimize.LimitChunkCountPlugin({maxChunks: 1}),
+      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
     ],
     optimization: {
       minimize: false,
@@ -92,5 +92,5 @@ module.exports = {
     }
   },
 
-  copy: ['./assets', './utils.js'], // 将会复制到目标目录
+  copy: [], // 将会复制到目标目录
 }
