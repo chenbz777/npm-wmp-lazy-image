@@ -1,5 +1,1 @@
-
-<view>
-    <image src="{{lazyImageUrl}}" mode="{{mode}}" alt="{{alt}}" class="lazy-image {{imageId}}">
-    </image>
-</view>
+<image src="{{lazyImageUrl}}" mode="{{mode}}" class="lazy-image {{imageId}}"></image>

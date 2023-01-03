@@ -14,10 +14,6 @@ Component({
       type: String,
       value: 'https://s1.ax1x.com/2022/05/08/OlbiFI.gif'
     },
-    alt: {
-      type: String,
-      value: ''
-    },
     // mode
     mode: {
       type: String,
@@ -29,7 +25,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    imageId: ''
+    imageId: '',
   },
 
   lifetimes: {
@@ -53,14 +49,17 @@ Component({
   methods: {
     // 懒加载
     lazy(className) {
+      const root = this
+
       const IntersectionObserver = this.createIntersectionObserver()
+
       IntersectionObserver.relativeToViewport()
+
       IntersectionObserver.observe(className, async (res) => {
         if (res.intersectionRatio) {
-          this.setData({
-            lazyImageUrl: this.data.src
+          root.setData({
+            lazyImageUrl: root.data.src
           })
-
           // 关闭监听
           IntersectionObserver.disconnect()
         }
